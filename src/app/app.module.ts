@@ -3,9 +3,9 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { CrListComponent } from './cr-list/cr-list.component';
-import { CrViewComponent } from './cr-view/cr-view.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { CrListComponent } from './components/cr/cr-list/cr-list.component';
+import { CrViewComponent } from './components/cr/cr-view/cr-view.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 const appRoutes: Routes = [
   {

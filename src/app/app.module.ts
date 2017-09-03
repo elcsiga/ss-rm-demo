@@ -3,9 +3,12 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { CrListComponent } from './components/cr/cr-list/cr-list.component';
-import { CrViewComponent } from './components/cr/cr-view/cr-view.component';
-import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { CrListComponent } from './cr/components/cr-list/cr-list.component';
+import { CrViewComponent } from './cr/components/cr-view/cr-view.component';
+import { PageNotFoundComponent } from './common/components/page-not-found/page-not-found.component';
+
+import { StoreModule } from '@ngrx/store';
+import { reducers } from './app.state';
 
 const appRoutes: Routes = [
   {
@@ -35,9 +38,11 @@ const appRoutes: Routes = [
     BrowserModule,
     RouterModule.forRoot(
       appRoutes
-    )
+    ),
+    StoreModule.forRoot(reducers)
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

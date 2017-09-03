@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CrListComponent } from './cr-list.component';
+import { CrListComponent } from './cr-list.component.ts';
 
 describe('CrListComponent', () => {
   let component: CrListComponent;

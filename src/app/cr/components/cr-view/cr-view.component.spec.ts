@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CrViewComponent } from './cr-view.component';
+import { CrViewComponent } from './cr-view.component.ts';
 
 describe('CrViewComponent', () => {
   let component: CrViewComponent;
